@@ -1,0 +1,29 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+Random 50000 run times: 0m15.479s 15.541s 0m15.397s (SLOWEST of the 3 for random)
+Sorted 50000 run times: 0m6.444s 0m4.143s 0m3.387s
+Reversed 50000 run times: 0m14.195s 0m12.481s 0m11.560s (SLOWEST of the 3 for reversed)
+
+Bubble sort worst case scenario is the reversed order of the items to search through, and it was BY FAR the slowest one for the 50k reversed list.
+Best case scenario for bubble sort is when the list is already sorted, and the run times showed that this algorithm performed much better with sorted lists, than with random or reversed lists.
+
+sort2 uses: Merge Sort
+
+How do you know?:
+Random 50000 run times: 0m4.100s 0m2.199s 0m2.722s (FASTEST of the 3 for random)
+Sorted 50000 run times: 0m3.104s 0m2.423s 0m4.221s (FASTEST of the 3 for sorted)
+Reversed 50000 run times: 0m3.385s 0m7.059s 0m3.721s (FASTEST of the 3 for reversed)
+
+Being by far the fastest search algorithm for 50k random numbers was already enough to know that this was the Merge Sort,
+but it was also the fastest for the sorted and reversed lists too.
+
+sort3 uses: Selection Sort
+
+How do you know?:
+Random 50000 run times: 0m7.738s 0m8.830s 0m8.151s
+Sorted 50000 run times: 0m9.652s 0m7.624s 0m7.242s (SLOWEST of the 3 for sorted)
+Reversed 50000 run times: 0m8.262s 0m7.196s 0m8.530s
+
+Selection sort has the same worst and best case scenario, it has to go through all of the items n^2 times.
+The run times are pretty even for this algorithm, for sorted, reversed and random lists, so it was enough evidence to know for sure that this was the selection sort.
